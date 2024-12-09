@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+	<title>Canlig Liang⎮Home Page</title>
+	<link rel="icon" type="image" href="https://cdn.discordapp.com/attachments/955396214646505483/1315516798312910940/99HdIAAAAwDPPveirGauCgORkBAgQmAcE1wZolQIAAAQIECBAgQICA4PIBAgQIECBAgAABAgQITAKCa4I1S4AAAQIECBAgQIAAAcHlAwQIECBAgAABAgQIEJgEBNcEa5YAAQIECBAgQIAAAQKCywcIECBAgAABAgQIECAwCQiuCdYsAQIECBAgQIAAAQIEBJcPECBAgAABAgQIECBAYBIQXBOsWQIECBAgQIAAAQIECAguHyBAgAABAgQIECBAgMAkILgmWLMECBAgQIAAAQIECBAQXD5AgAABAgQIECBAgACBSUBwTbBmCRAgQIAAAQIECBAgILh8gAABAgQIECBAgAABApOA4JpgzRIgQIAAAQIECBAgQEBwQABAgQIECBAgAABAgQmAcE1wZolQIAAAQIECBAgQICA4PIBAgQIECBAgAABAgQITAKCa4I1S4AAAQIECBAgQIAAAcHlAwQIECBAgAABAgQIEJgEBNcEa5YAAQIECBAgQIAAAQK..png?ex=6757b1fd&is=6756607d&hm=150f1ba375319510ea64d83d4aaf192bab182d6c9aa896e2b4bafcc45fc46fbb&">
+	<style>
+
+		body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Maligcong_Rice_Terraces.jpg') no-repeat center center;
+            background-size: cover;
+
+		 .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery div {
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease;
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            height: auto;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery div:hover img {
+            transform: translateY(-10px);
+        }
+
+        }
+        #logo{
+        	width: 55px;
+        	height: 55px;
+        }
+
+        #banner{
+
+        	width: 600px;
+        	height: 600px;
+        	align-items: left;
+        	border-radius: 50px;
+        	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+        	padding: 15px;
+        	transition: transform 0.3s, box shadow 0.3s;
+      
+
+        }
+
+        #banner:hover{
+         	transform: scale(1.05)
+        }
+
+        #banner2{
+
+        	width: 600px;
+        	height: 600px;
+        	align-items: right;
+        	border-radius: 50px;
+        	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+        	padding: 15px;
+        	transition: transform 0.3s, box shadow 0.3s;
+        	
+
+        }
+
+        #banner2:hover{
+         	transform: scale(1.05)
+        }
+
+        input{
+        	border-radius: 10px;
+        }
+       
+
+      
+       
+	</style>
+
+</head>
+<body>
+	<body>
+	<nav class="navbar navbar-expand-md bg-danger navbar-darkf fixed-top">
+		<!-- Brand/Logo -->
+	<div class="container-fluid">
+		<!-- Keep alignment attribute value as left -->
+		<a class="navbar-brand" href="index.html"><img align="left" id="logo" 
+			src="https://cdn.discordapp.com/attachments/955396214646505483/1315516798312910940/99HdIAAAAwDPPveirGauCgORkBAgQmAcE1wZolQIAAAQIECBAgQICA4PIBAgQIECBAgAABAgQITAKCa4I1S4AAAQIECBAgQIAAAcHlAwQIECBAgAABAgQIEJgEBNcEa5YAAQIECBAgQIAAAQKCywcIECBAgAABAgQIECAwCQiuCdYsAQIECBAgQIAAAQIEBJcPECBAgAABAgQIECBAYBIQXBOsWQIECBAgQIAAAQIECAguHyBAgAABAgQIECBAgMAkILgmWLMECBAgQIAAAQIECBAQXD5AgAABAgQIECBAgACBSUBwTbBmCRAgQIAAAQIECBAgILh8gAABAgQIECBAgAABApOA4JpgzRIgQIAAAQIECBAgQEBwQABAgQIECBAgAABAgQmAcE1wZolQIAAAQIECBAgQICA4PIBAgQIECBAgAABAgQITAKCa4I1S4AAAQIECBAgQIAAAcHlAwQIECBAgAABAgQIEJgEBNcEa5YAAQIECBAgQIAAAQK..png?ex=6757b1fd&is=6756607d&hm=150f1ba375319510ea64d83d4aaf192bab182d6c9aa896e2b4bafcc45fc46fbb&"></a>
+
+			<!-- Add Links -->
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="https://ja-taruc.github.io/index.html/">𝗕𝗮𝗹𝗮𝘆⎮𝗛𝗼𝗺𝗲</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=" https://ja-taruc.github.io/index2.html/">𝗜𝗽𝗮𝗻𝗮𝗴𝗹𝘂𝘁𝗼⎮𝗥𝗲𝗰𝗶𝗽𝗲𝘀</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="page2.html">𝗜𝗽𝗶𝗻𝗮𝗴𝗹𝘂𝘁𝗼𝗺⎮𝗬𝗼𝘂𝗿 𝗥𝗲𝗰𝗶𝗽𝗲𝘀</a>
+					</li>
+				</ul>
+				<!-- Add a search bar -->
+				<form class="d-flex">
+					<input class="form-warning" type="text" placeholder="Maghanap">
+					<button class="btn btn-warning " type="button">Hanapin</button>
+					</form>
+					</div>
+
+				</div>
+			</nav>
+		<br>
+	<br>
+<br>
+<img id="banner" src="https://cdn.discordapp.com/attachments/955396214646505483/1315511350126186566/80662b.png?ex=6757acea&is=67565b6a&hm=c0648112421e15adfac75b497c298108d465497c06a7c78992a4a3529a6c950c&" style="position: absolute; right: 1100px; top: 225px;"> 
+
+<img id="banner2" src="https://cdn.discordapp.com/attachments/955396214646505483/1315573507652059167/80662b_2.png?ex=6757e6ce&is=6756954e&hm=9fa2f8902a53a77a3944919712eeb11caab49baf8cc953cda3c353b0b0b0bfba&" style="position: absolute; left: 1100px; top: 225px;">
+
+	
+
+
+
+</body>
+</html>
